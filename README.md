@@ -20,7 +20,6 @@ Now I wrote the content of each file:
 Added the following npm scripts to package.json:
 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "webpack-dev-server --hot", // also enables hot module reloading
-	"build": "webpack" // will create 'bundle.js' in the root directory
+		"start": "webpack-dev-server --hot", // also enables hot module reloading
+		"build": "webpack" // will create 'bundle.js' in the root directory
   },
