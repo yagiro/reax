@@ -7,6 +7,7 @@ Ran the following bash command:
 	$ npm init
 	$ npm install --save-dev webpack webpack-dev-server react react-dom
 	$ npm install --save-dev babel-core babel-loader babel-preset-react babel-preset-es2015 // babel plugins
+	$ npm install --save-dev style-loader css-loader sass-loader node-sass // style plugins
 	$ mkdir app
 	$ touch index.html index.js webpack.config.js app/App.js .gitignore
 

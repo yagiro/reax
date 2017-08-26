@@ -16,6 +16,11 @@ const config = {
                 query: {
                     presets: ['es2015', 'react'] // use es2015 and react
                 }
+            },
+            {
+                test: /(\.css|\.scss)$/,
+                exclude: /node_modules/,                
+                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
             }
        ]
     },
