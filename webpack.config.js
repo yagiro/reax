@@ -4,8 +4,9 @@ const config = {
         filename: 'bundle.js', // place where bundled app will be served
     },
     devServer: {
-          inline: true, // autorefresh
-          port: 8080 // development port server
+        inline: true, // autorefresh
+        port: 8080, // development port server,
+        allowedHosts: [ 'my.host.name' ] // optional: add 'my.host.name' to your hosts file (with localhost IP)          
     },
     module: {
         loaders: [
