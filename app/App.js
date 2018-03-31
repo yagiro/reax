@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-require('../sass/index.scss');
+require('./sass/index.scss');
 
 import Example from './components/Example';
 
