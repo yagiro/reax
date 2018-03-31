@@ -1,0 +1,23 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.flex-row {
+    @extend .flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    @extend .flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.sub-title {
+    font-size: 20px;
+}
