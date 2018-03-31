@@ -1,0 +1,1 @@
+export const RANDOMIZE_COLOR = 'RANDOMIZE_COLOR';
