@@ -29,7 +29,6 @@ const exampleReducer = (state = initialState, action) => {
             newState = Object.assign({}, state, {
                 color: randomColor
             });
-            console.log('Randomized color ' + randomColor);
             break;
     }
     return newState;
