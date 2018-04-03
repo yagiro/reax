@@ -1,29 +1,9 @@
-$main-font: Arial;
+@import 'flex';
 
 body {
+    @extend .flex-col;
     padding: 20px;
     background-color: #f1f1f1;
-    font: $main-font;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-.flex-row {
-    @extend .flex;
-    flex-direction: row;
-}
-
-.flex-col {
-    @extend .flex;
-    flex-direction: column;
-}
-
-.clickable {
-    cursor: pointer;
 }
 
 .title {

@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const config = {
     entry: './index.js', // entry point
     output: {
@@ -11,7 +13,7 @@ const config = {
     module: {
         loaders: [
             {
-                test: /\.jsx?$/, // search for js files 
+                test: /\.jsx?$/, // search for .js & .jsx files 
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
@@ -19,14 +21,19 @@ const config = {
                 }
             },
             {
-                test: /(\.css|\.scss)$/,
+                test: /\.s?css$/,
                 exclude: /node_modules/,                
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ]
             }
        ]
     },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            comments: false
+        })
+    ],
     watchOptions: {
-      poll: true // if file watch doesn't work
+      poll: true // in case webpack's file watcher is not triggerd by file system
     }
  }
  module.exports = config;
