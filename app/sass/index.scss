@@ -1,3 +1,11 @@
+$main-font: Arial;
+
+body {
+    padding: 20px;
+    background-color: #f1f1f1;
+    font: $main-font;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -14,10 +22,19 @@
     flex-direction: column;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 .title {
-    font-size: 40px;
+    font-size: 80px;
 }
 
 .sub-title {
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.footer-text {
+    color: black;
+    font-size: 18px;
 }

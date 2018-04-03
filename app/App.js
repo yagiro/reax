@@ -8,10 +8,12 @@ class App extends Component {
     render() {
         return (
             <div className="flex-col">
-                <span className="title">Reax</span>
-                <span className="sub-title">React &amp; Redux Starter</span>
-                <span className="sub-title">Created with love by Yakir Rabinovich</span>
-                <div style={{ marginTop: '20px' }}><Example/></div>
+                <div className="title" style={{ marginBottom: '-15px', color: '#ce80c6' }}>Reax</div>
+                <div className="sub-title" style={{ color: '#584a57' }}>React &amp; Redux Starter</div>
+                <div style={{ margin: '60px' }}><Example/></div>
+                <div className="footer-text">
+                    Created with <span style={{ color: '#ce80c6', fontWeight: 'bold' }}>&lt;3</span> by Yakir Rabinovich
+                </div>
             </div>
         )
     }
