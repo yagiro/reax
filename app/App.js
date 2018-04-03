@@ -12,7 +12,7 @@ class App extends Component {
                 <div className="sub-title" style={{ color: '#584a57' }}>React &amp; Redux Starter</div>
                 <div style={{ margin: '60px' }}><Example/></div>
                 <div className="footer-text">
-                    Created with <span style={{ color: '#ce80c6', fontWeight: 'bold' }}>&lt;3</span> by Yakir Rabinovich
+                    Created with <span style={{ color: '#ce80c6', fontWeight: 'bold' }}>&lt;3</span> by Yagiro
                 </div>
             </div>
         )

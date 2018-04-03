@@ -1,5 +1,5 @@
 ------------------------------------------
-	HOW WAS THIS REACT STARTER CREATED
+	HOW WAS REAX CREATED
 ------------------------------------------
 
 Ran the following bash command:
