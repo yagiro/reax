@@ -1,7 +1,3 @@
-import example from './exampleReducer';
-
-const rootReducer = (state = {}, action) => ({
-    example: example(state.example, action)
-});
+const rootReducer = (state = {}, action) => state;
 
 export default rootReducer;
