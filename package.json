@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --hot -d",
     "build": "webpack"
   },
-  "author": "",
+  "author": "yagiro",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
