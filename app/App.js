@@ -1,28 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 require('./sass/index.scss');
-import store from './store';
 import config from './config'
 
 import Example from './components/Example';
 import MarginWrapper from './components/MarginWrapper';
 
 class App extends Component {
-    constructor() {
-        super();
-        this.state = {
-            color: store.getState().example.color
-        };
-        store.subscribe(this.onDispatch.bind(this));
-    }
-
-    onDispatch() {
-        let color = store.getState().example.color;
-        this.setState({ color });
-    }
-
     render() {
-        let color = this.state.color;
+        let color = this.props.color;
         return (
             <div className="flex-col">
                 <Title color={ color }>Reax</Title>
@@ -60,4 +46,10 @@ const CreditFooter = props => (
     </div>
 );
 
-export default App;
+const mapStateToProps = state => ({
+    color: state.example.color
+});
+
+const mapDispatchToProps = null;
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
