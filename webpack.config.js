@@ -30,7 +30,8 @@ const config = {
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             comments: false
-        })
+        }),
+        new webpack.NamedModulesPlugin(),
     ],
     watchOptions: {
       poll: true // in case webpack's file watcher is not triggerd by file system
