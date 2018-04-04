@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 require('./sass/index.scss');
 import store from './store';
+import { hot } from 'react-hot-loader';
 
 class App extends Component {
     render() {
@@ -40,4 +41,4 @@ const CreditFooter = props => (
     </div>
 );
 
-export default App;
+export default hot(module)(App);
