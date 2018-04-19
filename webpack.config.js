@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const config = {
     entry: './index.js', // entry point
     output: {
-        filename: 'bundle.js', // place where bundled app will be served
+        filename: 'dist/bundle.js', // place where bundled app will be served
     },
     devServer: {
         inline: true, // autorefresh
