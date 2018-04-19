@@ -8,7 +8,7 @@ const config = {
     devServer: {
         inline: true, // autorefresh
         port: 8080, // development port server,
-        allowedHosts: [ 'my.host.name' ] // optional: add 'my.host.name' to your hosts file (with localhost IP)          
+        allowedHosts: [ 'my.host.domain' ] // optional: add 'my.host.domain' to your hosts file (with localhost IP)          
     },
     module: {
         loaders: [
