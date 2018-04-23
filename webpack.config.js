@@ -1,11 +1,14 @@
 const webpack = require('webpack');
+const path = require('path');
 
 const config = {
     entry: './index.js', // entry point
     output: {
-        filename: 'dist/bundle.js', // place where bundled app will be served
+        path: path.resolve('.', 'dist'), // the target directory for all output files
+        filename: 'bundle.js', // the filename template for entry chunks
     },
     devServer: {
+        contentBase: path.resolve('.') + path.sep,
         inline: true, // autorefresh
         port: 8080, // development port server,
         allowedHosts: [ 'my.host.domain' ] // optional: add 'my.host.domain' to your hosts file (with localhost IP)          
