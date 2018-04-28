@@ -20,7 +20,7 @@ const config = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015', 'react', 'stage-2'] // use es2015 and react
+                    presets: ['es2015', 'react', 'stage-2'] // use es2015, react, stage-2 (for spread syntax)
                 }
             },
             {
