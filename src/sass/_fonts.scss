@@ -1,0 +1,10 @@
+@mixin font($font-family, $file-path) {
+    @font-face {
+        font-family: $font-family;
+        src: url($file-path);
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+@include font('cabin', '../assets/fonts/Cabin-Regular.ttf');
