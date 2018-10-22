@@ -1,6 +1,0 @@
-- update App.js
-- add redux-logger
-- upgrade: react, redux, webpack, webpack-dev-server
-- add ployfills
-- check hmr works
-- check all npm scripts work
