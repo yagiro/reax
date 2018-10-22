@@ -1,6 +1,7 @@
 const path = require('path');
 const merge = require('webpack-merge');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.config.common');
 
 // TODO: add clean dist plugin
@@ -14,10 +15,14 @@ const config = merge(common, {
 	},
 	devtool: 'source-map',
 	plugins: [
-		new CleanWebpackPlugin([ 'dist/*.js' ], {
+		new CleanWebpackPlugin([ 'dist' ], {
 			verbose: true,
 			dry: false,
 			root: path.resolve('.'),
+		}),
+		new HtmlWebpackPlugin({
+			template: path.resolve('./src/index.html'),
+			inject: false,
 		}),
 	],
 });

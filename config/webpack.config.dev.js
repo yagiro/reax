@@ -8,7 +8,7 @@ const PORT = 8080;
 const config = merge(common, {
 	mode: 'development',
 	devServer: {
-		contentBase: path.resolve('./dist'),
+		contentBase: path.resolve('./src'),
 		port: PORT,
 		allowedHosts: [ 'custom.domain.org' ], // optional: add 'custom.domain.org' to your hosts file (with localhost IP)
 		headers: {

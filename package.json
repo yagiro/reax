@@ -11,7 +11,8 @@
     "lint:watch": "npm run lint -- --watch",
     "webpack:profile:json": "node_modules/.bin/webpack --profile --json --config ./config/webpack.config.prd.js > compilation-stats.json",
     "analyze:view": "node_modules/.bin/webpack-bundle-analyzer ./compilation-stats.json",
-    "analyze": "npm-run-all webpack:profile:json analyze:view"
+    "analyze": "npm-run-all webpack:profile:json analyze:view",
+    "clean": "node_modules/.bin/rimraf ./dist"
   },
   "author": "yagiro",
   "license": "ISC",
@@ -29,10 +30,12 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint-watch": "^4.0.2",
     "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.3",
     "papaparse": "^4.6.1",
     "react-hot-loader": "^4.0.1",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^4.20.2",
